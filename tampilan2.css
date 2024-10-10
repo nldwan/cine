@@ -1,0 +1,105 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('slide2/background\ .png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 1300px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    background: url(slide2/background\ .png);
+    border: 9px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .9);
+    color: #FFF;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.poster img {
+    position: relative;
+    top: -80px;
+    margin-top: 10px;
+}
+
+.wrapper .poster img {
+    width: 45%;
+    padding: 0 10px;
+    margin: 0 0 10px;
+    
+}
+
+.logo img {
+    position: relative;
+    margin-top: 30px;
+}
+
+.wrapper .logo {
+    margin: 0 550px;
+}
+
+.ket {
+    margin: 5px 0px 20px 600px;
+    position: relative;
+    margin-top: -560px;
+}
+
+.wrapper .ket .deskripsi {
+    font-size: 25px;
+    color: #FFF;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #FFF;
+    width: 60%;
+    line-height: 50px;
+}
+
+p {
+    width: 80%;
+}
+
+.wrapper .image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    padding: 5px 0 30px 580px;  
+}
+
+.image-button img {
+    width: 80%; /* Atur ukuran sesuai kebutuhan */
+    height: 20%;
+    position: relative;
+}
+
+.image-button:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+@media (min-width: 600px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
